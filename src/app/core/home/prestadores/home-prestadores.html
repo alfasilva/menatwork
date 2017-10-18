@@ -1,0 +1,13 @@
+<div class="row text-center pad-top">
+    <a *ngFor="let prestador of prestadores" [routerLink]="['/prestadorDetalhes', prestador.id]" class="w3-opacity w3-hover-opacity-off" >
+            <div class="w3-third">
+                <div class="w3-card-4">
+                    <img src="{{prestador.url}}" alt="{{prestador.nome}}"  style="width:50%">
+                    <div class="w3-animate-bottom">
+                        <h4>{{prestador.nome}}</h4>
+                    </div>
+                </div>
+            </div>
+    </a>
+</div>
+

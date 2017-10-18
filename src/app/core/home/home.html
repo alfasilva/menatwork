@@ -1,0 +1,12 @@
+ <div class="row text-center pad-top">
+        <a *ngFor="let categoria of categorias" [routerLink]="['/homeDetail', categoria.id]" >
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                <div class="w3-card-2">
+                   <i class="{{categoria.icon}} fa-5x" ></i>
+                    <div class="w3-center">
+                        <p>{{categoria.nome}}</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+ </div>

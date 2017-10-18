@@ -1,0 +1,23 @@
+<div *ngIf="servico" class="w3-card-4">
+
+    <div class="w3-container w3-center">
+        <h3><h2>{{servico.nome}}</h2></h3>
+        <i class="{{servico.icon}} fa-5x" ></i>
+        <h5>{{servico.descricao}}</h5>
+
+        <hr/>
+
+        <div class="row text-center pad-top">
+            <a *ngFor="let servicoprestador of servicoprestadores" [routerLink]="['/homeServicoPrestador', servicoprestador.id]" >
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                    <div class="w3-card-2 w3-center">
+                        <h5>{{servicoprestador.prestador.nome}}</h5>
+                        <img src="{{servicoprestador.url}}" alt="{{servicoprestador.descricao}}" style="width:80%" />
+                        <h5>{{servicoprestador.descricao}}</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
