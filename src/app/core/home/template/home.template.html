@@ -3,7 +3,7 @@
     <div class="w3-top">
         <div class="w3-bar w3-theme-d3 w3-left-align w3-large">
             <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-            <a routerLink="/home" routerLinkActive="active" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+            <a routerLink="/home" routerLinkActive="active" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"><img src="../../../../assets/icon/favicon-32x32.png" class="w3-margin-right"/></a>
             <a routerLink="/dashboard" routerLinkActive="active" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
             <a routerLink="/prestadores" routerLinkActive="active" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Prestadores de Serviço"><i class="fa fa fa-user"></i></a>
             <a routerLink="/heroes" routerLinkActive="active" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Heroes"><i class="fa fa-archive"></i></a>
@@ -21,7 +21,7 @@
     </div>
 
     <!-- Page Container -->
-    <div class="w3-container w3-content" style="max-width:1400px;margin-top:55px">
+    <div class="w3-container w3-content" style="max-width:1400px;margin-top:5%;">
 
         <div class="container">
             <router-outlet></router-outlet>
@@ -29,11 +29,7 @@
 
     </div>
 
-    <footer class="w3-container w3-theme-d3 w3-large">
-        <h5>Footer</h5>
-    </footer>
-
-    <footer class="w3-container w3-theme-d5">
+    <footer class="w3-container w3-theme-d5" style="margin-top:1%;" >
         <p>Powered by <a href="http://alfasilva.com.br" target="_blank">Alf4Silva</a></p>
     </footer>
 </div>
